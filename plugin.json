@@ -3,8 +3,26 @@
   "name": "Custom User Fields",
   "description": "A plugin to add custom fields to user profiles in NodeBB.",
   "version": "1.0.0",
-  "url": "https://github.com/yourusername/nodebb-plugin-custom-user-fields",
+  "url": "https://github.com/ymp112/nodebb-plugin-custom-user-fields",
   "dependencies": {},
   "license": "The Unlicense"
+   "hooks": [
+    {
+      "hook": "server:routes",
+      "method": "./library.js"
+    }
+     {
+      "hook": "admin.menu",
+      "method": "./library.addAdminMenu"
+    },
+    {
+      "hook": "admin.get",
+      "method": "./library.getAdminSettings"
+    },
+    {
+      "hook": "admin.post",
+      "method": "./library.saveAdminSettings"
+    }
+  ]
 }
 
