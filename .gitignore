@@ -1,0 +1,14 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore npm log files
+npm-debug.log
+
+# Ignore .env files (אם יש לך קבצי סביבה עם מידע רגיש)
+.env
+
+# Ignore OS specific files (לדוגמה, מערכת הפעלה macOS)
+.DS_Store
+
+# Ignore any other unnecessary files or directories
+*.log
