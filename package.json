@@ -1,0 +1,8 @@
+{
+  "name": "nodebb-plugin-custom-user-fields",
+  "version": "1.0.0",
+  "description": "A plugin to add custom fields to user profiles in NodeBB.",
+  "nbbpm": {
+    "compatibility": "^2.0.0"
+  }
+}
