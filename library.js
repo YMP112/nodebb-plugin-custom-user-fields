@@ -4,18 +4,18 @@ const user = require.main.require('./src/user');
 
 module.exports = {
   init: function (params, callback) {
-    // כאן תוכל להוסיף את הלוגיקה שלך
-    console.log('Custom Fields Plugin Initialized');
+    console.log('Custom User Fields Plugin Initialized');
     callback();
   },
 
-  // פונקציה להוספת שדה מותאם אישית
+  // Function to add a custom field to a user profile
   addCustomField: function (uid, fieldName, fieldValue, callback) {
     user.getUserData(uid, (err, userData) => {
       if (err) {
         return callback(err);
       }
-      // הוסף את השדה המותאם אישית למידע של המשתמש
+      
+      // Create a customFields object if it doesn't exist
       userData.customFields = userData.customFields || {};
       userData.customFields[fieldName] = fieldValue;
 
