@@ -1,0 +1,9 @@
+{
+  "id": "custom-fields",
+  "name": "Custom Fields",
+  "description": "תוסף להוספת שדות מותאמים אישית בפרופיל משתמש ב-NodeBB",
+  "version": "1.0.0",
+  "url": "https://github.com/yourusername/nodebb-plugin-custom-fields",
+  "dependencies": {},
+  "license": "MIT"
+}
