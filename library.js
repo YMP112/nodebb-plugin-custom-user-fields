@@ -6,7 +6,7 @@ const db = require.main.require('./src/database');
 
 module.exports = {
 
-  // פונקציה שמאתחלת את התוסף
+  // אתחול התוסף
   init: function (params, callback) {
     console.log('Custom User Fields Plugin Initialized');
     callback();
