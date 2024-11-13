@@ -2,7 +2,15 @@
   "name": "nodebb-plugin-custom-user-fields",
   "version": "1.0.0",
   "description": "A plugin to add custom fields to user profiles in NodeBB.",
+  "main": "library.js",
+  "scripts": {
+    "start": "node library.js"
+  },
+  "keywords": ["NodeBB", "plugin", "custom fields"],
+  "author": "Ymp",
+  "license": "The Unlicense",
+  "dependencies": {},
   "nbbpm": {
-    "compatibility": "^2.0.0"
+    "compatibility": "^3.8.4"
   }
 }
